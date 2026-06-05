@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>松戸総建 | 外壁塗装・防水工事・内装工事 | 千葉・東京・神奈川</title>
+<meta name="description" content="松戸総建は外壁塗装・防水工事・内装工事の専門会社。千葉県・東京都・神奈川県対応。現地調査・お見積り無料。住まいの劣化、雨漏り、クロス張替えなど幅広く対応します。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* ============================================================
+     Print-friendly overrides (also applied on screen for preview)
+     ============================================================ */
+  html, body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  /* Reveal-on-scroll items must be visible in print */
+  .reveal { opacity: 1 !important; transform: none !important; }
+  /* Sticky / interactive chrome — hide in print version */
+  .site-header,
+  .mobile-cta,
+  .hero-scroll,
+  .hamburger { display: none !important; }
+  body { padding-bottom: 0 !important; }
+  /* Hero — remove min-height since header is hidden */
+  .hero { padding: 60px 0 80px !important; min-height: auto !important; }
+  /* FAQ — all answers open */
+  .faq-item { /* keep border styling */ }
+  .faq-item .faq-a { max-height: none !important; overflow: visible !important; }
+  .faq-item .faq-icon { display: none !important; }
+  .faq-q { cursor: default !important; padding: 22px 0 8px !important; }
+  .faq-a-inner { padding-bottom: 22px !important; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  @media print {
+    body { background: var(--bg) !important; }
+    section { padding: 60px 0 !important; break-inside: avoid-page; }
+    /* Force page breaks before major sections to keep visual rhythm */
+    #reasons,
+    .services,
+    #works,
+    .pricing,
+    #flow,
+    .faq,
+    #areas,
+    .contact,
+    .company,
+    .cta-section { break-before: page; }
+    /* Avoid splitting cards / form blocks */
+    .reason,
+    .service,
+    .price-item,
+    .step,
+    .area,
+    .faq-item,
+    .company-row,
+    .form,
+    .works-cta,
+    .areas-strip,
+    .hero-visual { break-inside: avoid; }
+    .section-head { break-after: avoid; }
+    /* Ensure dark bg + pink colors don't get stripped */
+    .hero::before, .hero::after,
+    .cta-section::before {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    /* Keep button text legible (no transforms / shadows that blur) */
+    .btn-pink { box-shadow: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- =============================================
+     HEADER
+     ============================================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="松戸総建">
+      <span class="brand-mark"><img src="assets/logo-mark.png" alt="" /></span>
+      <span>
+        松戸総建
+        <small class="brand-sub">MATSUDO SOKEN</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="#reasons">選ばれる理由</a>
+      <a href="#services">サービス</a>
+      <a href="#works">施工事例</a>
+      <a href="#pricing">料金目安</a>
+      <a href="#flow">ご依頼の流れ</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#company">会社概要</a>
+    </nav>
+    <div class="header-cta">
+      <span class="header-tel">
+        <span>TEL</span><strong>000-0000-0000</strong>
+      </span>
+      <a href="#contact" class="btn btn-pink btn-sm">無料見積り</a>
+      <button class="hamburger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        現地調査・お見積り 完全無料
+      </div>
+      <img class="hero-brand-logo" src="assets/logo-full.png" alt="松戸総建" />
+      <p class="hero-headline">
+        外壁塗装・防水工事・内装工事なら<br />
+        <span class="pink">確かな技術</span>で、住まいに安心と価値を。
+      </p>
+      <p class="hero-sub">
+        外壁の劣化、雨漏り、防水の傷み、クロスの張替えなど、<br />
+        住まいに関するお悩みを幅広い施工でワンストップ対応。<br />
+        まずはお気軽にご相談ください。
+      </p>
+      <div class="hero-meta">
+        <span>千葉県対応</span>
+        <span>東京都対応</span>
+        <span>神奈川県対応</span>
+        <span>最短即日対応</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-pink btn-lg">無料見積りを依頼する <span class="arrow"></span></a>
+        <a href="tel:0000000000" class="btn btn-ghost btn-lg">電話で相談する</a>
+        <a href="#contact" class="btn btn-line btn-lg">LINEで相談</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ph"><span class="ph-label">SITE PHOTO / 施工現場</span></div>
+      <div class="hero-stat">
+        <div class="hero-stat-item"><span class="num">100%</span><span class="lbl">見積り無料</span></div>
+        <div class="hero-stat-item"><span class="num">3<small style="font-size:13px;color:var(--text-soft);">県</small></span><span class="lbl">対応エリア</span></div>
+        <div class="hero-stat-item"><span class="num">24h</span><span class="lbl">受付対応</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<!-- =============================================
+     REASONS
+     ============================================= -->
+<section id="reasons">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Why Matsudo Soken</div>
+        <h2 class="section-title">選ばれる<em>4つ</em>の理由</h2>
+      </div>
+      <p class="section-lead">私たちが多くのお客様に選ばれてきた理由をご紹介します。建物のプロとして、誠実な仕事と分かりやすい説明をお約束します。</p>
+    </div>
+
+    <div class="reasons-grid reveal">
+      <div class="reason">
+        <div class="reason-num">01 / ONE-STOP</div>
+        <h3>幅広い施工をワンストップ対応</h3>
+        <p>外壁塗装、防水工事、クロス張替えなど、建物に関する幅広い施工を一括で対応。複数業者へ依頼する手間なく、スムーズに工事を進められます。</p>
+      </div>
+      <div class="reason">
+        <div class="reason-num">02 / TRANSPARENT</div>
+        <h3>丁寧な現地調査と明確なお見積り</h3>
+        <p>施工前にしっかりと現地調査を行い、建物の状態を正確に把握。必要な工事内容を分かりやすくご説明し、適正価格でお見積りをご提示します。</p>
+      </div>
+      <div class="reason">
+        <div class="reason-num">03 / QUALITY</div>
+        <h3>確かな技術による高品質施工</h3>
+        <p>経験と技術を活かし、見えない部分まで丁寧に施工。仕上がりの美しさだけでなく、耐久性にもこだわります。</p>
+      </div>
+      <div class="reason">
+        <div class="reason-num">04 / SPEED</div>
+        <h3>スピーディーな対応</h3>
+        <p>お問い合わせから現地調査、お見積り提出まで迅速に対応。急なトラブルやお急ぎのご相談にも柔軟に対応いたします。</p>
+      </div>
+    </div>
+
+    <div class="areas-strip reveal">
+      <div class="areas-strip-label">
+        <small>WIDE COVERAGE / 広域対応</small>
+        幅広いエリアに対応しております
+      </div>
+      <ul class="areas-strip-list">
+        <li>千葉県</li>
+        <li>東京都</li>
+        <li>神奈川県</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SERVICES
+     ============================================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Services</div>
+        <h2 class="section-title">サービス<em>内容</em></h2>
+      </div>
+      <p class="section-lead">外装から内装まで、住まいに関わる工事を専門技術で対応。建物の状態に合わせて、最適な施工プランをご提案します。</p>
+    </div>
+
+    <div class="services-grid reveal">
+      <article class="service">
+        <div class="service-img">
+          <span class="service-num">SERVICE 01</span>
+          <span class="ph-label">EXTERIOR PAINT / 外壁塗装</span>
+        </div>
+        <div class="service-body">
+          <h3>外壁塗装工事</h3>
+          <p class="service-desc">住まいの美観維持だけでなく、防水性・耐久性を高めるための外壁塗装を行います。</p>
+          <ul class="service-list">
+            <li>外壁塗装</li>
+            <li>屋根塗装</li>
+            <li>外壁補修</li>
+            <li>クラック補修</li>
+            <li>下地処理</li>
+            <li>シーリング補修</li>
+          </ul>
+          <a href="#contact" class="service-cta">この工事の見積りを取る</a>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-img">
+          <span class="service-num">SERVICE 02</span>
+          <span class="ph-label">WATERPROOFING / 防水工事</span>
+        </div>
+        <div class="service-body">
+          <h3>防水工事</h3>
+          <p class="service-desc">雨漏りや劣化から建物を守る防水施工を行います。建物の長寿命化に欠かせない重要な工事です。</p>
+          <ul class="service-list">
+            <li>ベランダ防水</li>
+            <li>屋上防水</li>
+            <li>ウレタン防水</li>
+            <li>FRP防水</li>
+            <li>シート防水</li>
+            <li>シーリング工事</li>
+          </ul>
+          <a href="#contact" class="service-cta">この工事の見積りを取る</a>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-img">
+          <span class="service-num">SERVICE 03</span>
+          <span class="ph-label">INTERIOR / 内装工事</span>
+        </div>
+        <div class="service-body">
+          <h3>内装工事</h3>
+          <p class="service-desc">快適な室内空間づくりをサポート。クロス張替えから原状回復まで丁寧に対応します。</p>
+          <ul class="service-list">
+            <li>クロス張替え</li>
+            <li>壁紙補修</li>
+            <li>原状回復工事</li>
+            <li>内装リフォーム</li>
+            <li>各種補修工事</li>
+          </ul>
+          <a href="#contact" class="service-cta">この工事の見積りを取る</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     WORKS
+     ============================================= -->
+<section id="works">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Works</div>
+        <h2 class="section-title">施工<em>事例</em></h2>
+        <p style="margin-top:14px;color:var(--text-soft);max-width:560px;font-size:15px;">これまで手掛けた施工事例をご紹介します。Instagramにて最新事例を随時更新中。</p>
+      </div>
+    </div>
+
+    <div class="works-grid reveal">
+      <div class="work"><span class="work-tag">外壁塗装</span><span class="work-label">CASE 01</span></div>
+      <div class="work"><span class="work-tag">屋上防水</span><span class="work-label">CASE 02</span></div>
+      <div class="work"><span class="work-tag">クロス張替</span><span class="work-label">CASE 03</span></div>
+      <div class="work"><span class="work-tag">屋根塗装</span><span class="work-label">CASE 04</span></div>
+      <div class="work"><span class="work-tag">ベランダ防水</span><span class="work-label">CASE 05</span></div>
+      <div class="work"><span class="work-tag">外壁補修</span><span class="work-label">CASE 06</span></div>
+      <div class="work"><span class="work-tag">原状回復</span><span class="work-label">CASE 07</span></div>
+      <div class="work"><span class="work-tag">シーリング</span><span class="work-label">CASE 08</span></div>
+    </div>
+
+    <div class="works-cta reveal">
+      <div class="works-cta-text">
+        <div class="ig-icon">◉</div>
+        <div>
+          <strong style="display:block;font-size:15px;margin-bottom:2px;">Instagramで最新の施工事例を更新中</strong>
+          <span style="font-size:12px;color:var(--text-muted);">@matsudo_soken / 自動連携エリア</span>
+        </div>
+      </div>
+      <a href="#" class="btn btn-ghost">Instagram施工事例を見る <span class="arrow"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     PRICING
+     ============================================= -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Price</div>
+        <h2 class="section-title">料金<em>目安</em></h2>
+      </div>
+      <p class="section-lead">参考価格をご案内します。建物の状態や施工範囲により料金は変動しますので、正確なお見積りは現地調査後にご提示いたします。</p>
+    </div>
+
+    <div class="pricing-grid reveal">
+      <div class="price-item">
+        <h4>外壁塗装</h4>
+        <div class="price-num">80<small>万円〜</small></div>
+        <div class="price-note">一般住宅 / 標準仕様</div>
+      </div>
+      <div class="price-item">
+        <h4>屋根塗装</h4>
+        <div class="price-num">25<small>万円〜</small></div>
+        <div class="price-note">面積・素材により変動</div>
+      </div>
+      <div class="price-item">
+        <h4>ベランダ防水</h4>
+        <div class="price-num">8<small>万円〜</small></div>
+        <div class="price-note">ウレタン / FRP 対応</div>
+      </div>
+      <div class="price-item">
+        <h4>クロス張替え</h4>
+        <div class="price-num">1,200<small>円/㎡〜</small></div>
+        <div class="price-note">量産クロス・施工費込</div>
+      </div>
+      <div class="price-item">
+        <h4>原状回復工事</h4>
+        <div class="price-num" style="font-size:18px;line-height:1.3;">現地調査後<br />お見積り</div>
+        <div class="price-note" style="margin-top:8px;">物件状況に応じて対応</div>
+      </div>
+    </div>
+    <p class="pricing-disclaimer">※ 建物の状態や施工範囲により異なります</p>
+  </div>
+</section>
+
+<!-- =============================================
+     FLOW
+     ============================================= -->
+<section id="flow">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Flow</div>
+        <h2 class="section-title">ご依頼の<em>流れ</em></h2>
+      </div>
+      <p class="section-lead">お問い合わせからお引渡しまで、6つのステップでスムーズに進めます。</p>
+    </div>
+
+    <div class="flow-grid reveal">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>お問い合わせ</h4>
+        <p>お電話・LINE・フォームよりお気軽にご相談ください。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>現地調査</h4>
+        <p>現地を確認し、状態を詳しく調査します。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>お見積り提出</h4>
+        <p>施工内容・費用を明確にご説明します。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>ご契約</h4>
+        <p>内容にご納得いただいたうえでご契約となります。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h4>施工開始</h4>
+        <p>安全・丁寧に施工を進めます。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">06</div>
+        <h4>完了・ご確認</h4>
+        <p>仕上がりをご確認いただき、お引渡しとなります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">FAQ</div>
+        <h2 class="section-title">よくある<em>ご質問</em></h2>
+      </div>
+      <p class="section-lead">お客様からよくいただくご質問をまとめました。その他のご質問もお気軽にどうぞ。</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-mark">Q.</span>
+          <span class="faq-q-text">見積りは無料ですか？</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">はい。現地調査・お見積りともに無料です。お見積り後のご検討も自由ですので、お気軽にご相談ください。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-mark">Q.</span>
+          <span class="faq-q-text">相見積りでも大丈夫ですか？</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">もちろん可能です。比較検討のうえご判断ください。当社では適正価格と分かりやすいご説明を心がけております。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-mark">Q.</span>
+          <span class="faq-q-text">対応エリア外でも相談できますか？</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">内容によって対応可能です。まずはご相談ください。エリア外の場合も柔軟に検討させていただきます。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-mark">Q.</span>
+          <span class="faq-q-text">工事期間はどれくらいですか？</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">施工内容や規模によって異なります。現地調査後にスケジュールを詳細にご案内いたします。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-mark">Q.</span>
+          <span class="faq-q-text">雨天時はどうなりますか？</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">安全と品質を最優先し、必要に応じて日程を調整いたします。お客様のご都合と合わせて柔軟に対応します。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     AREAS
+     ============================================= -->
+<section id="areas">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Service Area</div>
+        <h2 class="section-title">対応<em>エリア</em></h2>
+      </div>
+      <p class="section-lead">千葉県・東京都・神奈川県を中心に幅広く対応しております。記載のないエリアもまずはご相談ください。</p>
+    </div>
+
+    <div class="areas-grid reveal">
+      <div class="area">
+        <div class="area-pref">CHIBA / 千葉県</div>
+        <h3>千葉県</h3>
+        <p class="area-cities">松戸市 / 柏市 / 市川市 / 船橋市 / 千葉市 ほか</p>
+      </div>
+      <div class="area">
+        <div class="area-pref">TOKYO / 東京都</div>
+        <h3>東京都</h3>
+        <p class="area-cities">23区全域 / 多摩エリア</p>
+      </div>
+      <div class="area">
+        <div class="area-pref">KANAGAWA / 神奈川県</div>
+        <h3>神奈川県</h3>
+        <p class="area-cities">横浜市 / 川崎市 / 相模原市 ほか</p>
+      </div>
+    </div>
+    <p class="areas-note">※ その他エリアもご相談ください。</p>
+  </div>
+</section>
+
+<!-- =============================================
+     CONTACT
+     ============================================= -->
+<section class="contact" id="contact" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="section-title">無料見積り<em>お問い合わせ</em></h2>
+      </div>
+      <p class="section-lead">最短30秒でお問い合わせ完了。住まいのお悩みをお気軽にご相談ください。</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3 style="font-size:24px;margin-bottom:14px;">まずはお気軽に<br /><span style="color:var(--pink);">ご相談ください</span></h3>
+        <p style="font-size:14px;color:var(--text-soft);line-height:1.85;">外壁・屋根・防水・内装、住まいに関するご相談は何でもお受けします。専門スタッフが丁寧に対応いたします。</p>
+
+        <div class="contact-stats">
+          <div class="contact-stat">
+            <div class="num">¥0</div>
+            <div class="lbl">現地調査・見積り</div>
+          </div>
+          <div class="contact-stat">
+            <div class="num">30<span style="font-size:14px;color:var(--text-soft);font-family:var(--font-jp);">秒</span></div>
+            <div class="lbl">最短お問い合わせ</div>
+          </div>
+        </div>
+
+        <div class="contact-channels">
+          <a href="tel:0000000000" class="channel">
+            <div class="channel-icon">☎</div>
+            <div class="channel-meta">
+              <div class="lbl">PHONE / 電話で相談</div>
+              <div class="val">000-0000-0000</div>
+            </div>
+          </a>
+          <a href="#" class="channel">
+            <div class="channel-icon" style="background:#06c755;color:#fff;">L</div>
+            <div class="channel-meta">
+              <div class="lbl">LINE / トークで相談</div>
+              <div class="val" style="font-size:14px;font-family:var(--font-jp);">LINEで友だち追加</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="form reveal" autocomplete="on" novalidate>
+        <div class="form-success">お問い合わせありがとうございます。担当者より追ってご連絡いたします。</div>
+
+        <div class="form-row">
+          <div class="field">
+            <label>お名前 <span class="req">必須</span></label>
+            <input type="text" name="name" placeholder="例）松戸 太郎" required />
+          </div>
+          <div class="field">
+            <label>電話番号 <span class="req">必須</span></label>
+            <input type="tel" name="tel" placeholder="例）000-0000-0000" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>メールアドレス <span class="opt">任意</span></label>
+          <input type="email" name="email" placeholder="例）info@example.com" />
+        </div>
+
+        <div class="field">
+          <label>ご希望の工事内容 <span class="req">必須</span></label>
+          <div class="checkboxes">
+            <label class="check-tile"><input type="checkbox" name="service" value="外壁塗装" />外壁塗装</label>
+            <label class="check-tile"><input type="checkbox" name="service" value="防水工事" />防水工事</label>
+            <label class="check-tile"><input type="checkbox" name="service" value="内装工事" />内装工事</label>
+            <label class="check-tile"><input type="checkbox" name="service" value="その他" />その他</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>施工場所 <span class="req">必須</span></label>
+          <input type="text" name="location" placeholder="例）千葉県松戸市〇〇" required />
+        </div>
+
+        <div class="field">
+          <label>ご相談内容 <span class="opt">任意</span></label>
+          <textarea name="message" placeholder="工事のご希望、建物の状態、お気づきの点などをご記入ください。"></textarea>
+        </div>
+
+        <div class="field">
+          <label>写真添付 <span class="opt">任意</span></label>
+          <div class="file-drop">
+            <div class="ic">↑</div>
+            ここに写真をドラッグ＆ドロップ または クリックして選択
+          </div>
+          <input id="file-input" type="file" name="photo" accept="image/*" multiple hidden />
+        </div>
+
+        <button type="submit" class="btn btn-pink form-submit">無料見積りを依頼する</button>
+        <p class="form-privacy">送信いただいた情報は当社プライバシーポリシーに基づき適切に管理いたします。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     COMPANY
+     ============================================= -->
+<section class="company" id="company">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">Company</div>
+        <h2 class="section-title">会社<em>概要</em></h2>
+      </div>
+    </div>
+
+    <dl class="company-table reveal">
+      <div class="company-row"><dt>会社名</dt><dd>松戸総建</dd></div>
+      <div class="company-row"><dt>代表者</dt><dd class="placeholder">＿＿＿＿＿＿＿＿</dd></div>
+      <div class="company-row"><dt>所在地</dt><dd class="placeholder">＿＿＿＿＿＿＿＿</dd></div>
+      <div class="company-row"><dt>電話番号</dt><dd class="placeholder">＿＿＿＿＿＿＿＿</dd></div>
+      <div class="company-row"><dt>メールアドレス</dt><dd class="placeholder">＿＿＿＿＿＿＿＿</dd></div>
+      <div class="company-row"><dt>営業時間</dt><dd class="placeholder">＿＿＿＿＿＿＿＿</dd></div>
+      <div class="company-row"><dt>定休日</dt><dd class="placeholder">＿＿＿＿＿＿＿＿</dd></div>
+      <div class="company-row"><dt>事業内容</dt><dd>外壁塗装工事 / 防水工事 / 内装工事 / 各種補修工事</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER CTA
+     ============================================= -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="reveal">外壁塗装・防水工事・内装工事の<br /><span class="pink">ご相談なら松戸総建へ</span></h2>
+    <p class="reveal">千葉県・東京都・神奈川県対応 ｜ 現地調査・お見積り無料</p>
+    <div class="cta-row reveal">
+      <a href="#contact" class="btn btn-pink btn-lg">無料見積りはこちら <span class="arrow"></span></a>
+      <a href="tel:0000000000" class="btn btn-ghost btn-lg">電話で相談する</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="brand" style="font-size:18px;">
+          <span class="brand-mark"><img src="assets/logo-mark.png" alt="" /></span>
+          <span>松戸総建<small class="brand-sub">MATSUDO SOKEN</small></span>
+        </div>
+        <p class="footer-brand-desc">外壁塗装・防水工事・内装工事の専門会社。千葉県・東京都・神奈川県を中心に、住まいに関する幅広いお悩みを解決します。</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul class="footer-list">
+          <li><a href="#services">外壁塗装工事</a></li>
+          <li><a href="#services">防水工事</a></li>
+          <li><a href="#services">内装工事</a></li>
+          <li><a href="#pricing">料金目安</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>About</h5>
+        <ul class="footer-list">
+          <li><a href="#reasons">選ばれる理由</a></li>
+          <li><a href="#works">施工事例</a></li>
+          <li><a href="#flow">ご依頼の流れ</a></li>
+          <li><a href="#company">会社概要</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="footer-list">
+          <li><a href="tel:0000000000">000-0000-0000</a></li>
+          <li><a href="#contact">無料見積りフォーム</a></li>
+          <li><a href="#contact">LINEで相談</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 松戸総建 / MATSUDO SOKEN. All rights reserved.</div>
+      <div style="display:flex;gap:18px;"><a href="#">プライバシーポリシー</a><a href="#">特定商取引法に基づく表記</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- =============================================
+     STICKY MOBILE CTA
+     ============================================= -->
+<div class="mobile-cta">
+  <a href="tel:0000000000" class="btn btn-ghost">電話</a>
+  <a href="#contact" class="btn btn-line">LINE</a>
+  <a href="#contact" class="btn btn-pink">無料見積り</a>
+</div>
+
+<!-- script.js intentionally omitted in print build -->
+<script>
+  // Auto-trigger the browser print dialog once fonts & layout are ready
+  (function () {
+    function ready() {
+      var fontsP = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+      Promise.resolve(fontsP).then(function () {
+        setTimeout(function () { window.print(); }, 600);
+      });
+    }
+    if (document.readyState === 'complete') ready();
+    else window.addEventListener('load', ready);
+  })();
+</script>
+</body>
+</html>
