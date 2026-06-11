@@ -102,6 +102,15 @@
     });
   }
 
+  // ---------- Works "もっと見る" ----------
+  const worksMoreBtn = document.querySelector('#works-more-btn');
+  if (worksMoreBtn) {
+    worksMoreBtn.addEventListener('click', () => {
+      document.querySelectorAll('.work.is-hidden').forEach((w) => w.classList.remove('is-hidden'));
+      worksMoreBtn.closest('.works-more').style.display = 'none';
+    });
+  }
+
   // ---------- Scroll reveal ----------
   const io = new IntersectionObserver(
     (entries) => {
