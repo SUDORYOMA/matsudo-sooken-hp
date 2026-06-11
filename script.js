@@ -84,21 +84,25 @@
 
   // ---------- Form submission ----------
   const form = document.querySelector('.form');
-  const success = document.querySelector('.form-success');
   if (form) {
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
+      const name = form.querySelector('[name="name"]');
+      const tel = form.querySelector('[name="tel"]');
+      const location = form.querySelector('[name="location"]');
+      const services = form.querySelectorAll('[name="service"]:checked');
+      let err = '';
+      if (!name.value.trim()) err = 'お名前を入力してください。';
+      else if (!tel.value.trim()) err = '電話番号を入力してください。';
+      else if (!location.value.trim()) err = '施工場所を入力してください。';
+      else if (services.length === 0) err = 'ご希望の工事内容を選択してください。';
+      if (err) {
+        e.preventDefault();
+        alert(err);
+        return;
+      }
       const submitBtn = form.querySelector('.form-submit');
-      const orig = submitBtn.textContent;
       submitBtn.textContent = '送信中…';
       submitBtn.disabled = true;
-      setTimeout(() => {
-        success.classList.add('is-on');
-        submitBtn.textContent = orig;
-        submitBtn.disabled = false;
-        success.scrollIntoView({ block: 'center', behavior: 'smooth' });
-        setTimeout(() => success.classList.remove('is-on'), 6000);
-      }, 900);
     });
   }
 
